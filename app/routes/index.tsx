@@ -1,27 +1,37 @@
-import { Project } from "~/components/ProjectThumb";
-import comicPriceCheck from "../images/thumbs/comicpricecheck.jpg";
+import * as React from "react";
+import { Grid } from "~/components/Grid";
+import { Icon } from "~/components/Icon";
+import { Headline1, Headline2, Body, Body2 } from "~/components/Typography";
 
 export default function Index() {
+  const [showGrid, setShowGrid] = React.useState(false);
   return (
-    <main className="flex flex-col">
-      <div className="p-8 bg-gradient-to-br from-indigo-700 to-blue-500 h-40 lg:h-96 flex flex-col justify-center">
-        <h1 className="text-5xl text-white font-bold">Hello.</h1>
-        <h2 className="text-2xl text-white font-semibold">
-          My name is Mike Johnson
-        </h2>
-        <div className="text-lg text-white mt-4">
-          I am a product designer with love for motion, design systems, and
-          engineering.
+    <>
+      {showGrid && <Grid />}
+      <div className="flex flex-col items-center p-6 z-10 relative">
+        <div className="container flex justify-between w-full">
+          <Body2>Mike Johnson</Body2>
+          <div className="flex gap-4">
+            <Icon>favorite</Icon>
+            <Body2>Twitter</Body2>
+            <Body2 onClick={() => setShowGrid(!showGrid)}>Grid</Body2>
+          </div>
+        </div>
+        <div className="container mt-24">
+          <Headline1>Hello!</Headline1>
+          <Body className="text-low">
+            I am a designer with a passion for motion design, prototyping, and design systems.
+          </Body>
+        </div>
+        <div className="container mt-12">
+          <Body2 className="text-low">I am also a</Body2>
+          <Headline2>Collector.</Headline2>
+          <Headline2>Comic book shop owner.</Headline2>
+          <Headline2>Team Manager.</Headline2>
+          <Headline2>Whatnot Seller.</Headline2>
+          <Headline2>NFT Artist.</Headline2>
         </div>
       </div>
-
-      <div className="grid grid-cols-3 lg:grid-cols-4">
-        <Project
-          title="Comic Pricecheck"
-          thumbnail={comicPriceCheck}
-          href="comic-price-check"
-        ></Project>
-      </div>
-    </main>
+    </>
   );
 }
