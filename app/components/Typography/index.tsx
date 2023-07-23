@@ -7,4 +7,5 @@ export type Typography = {
   className?: string;
   style?: string;
   onClick?: React.MouseEventHandler;
+  to?: string;
 };

@@ -44,6 +44,16 @@ body {
     padding-bottom: 5px;
   }
 
+  .textLink {
+    transition: all .3s ease-out;
+
+    @apply 
+    hover:bg-gray-800
+    hover:text-gray-50 
+
+    hover:dark:bg-gray-50 
+    hover:dark:text-gray-800;
+  }
 
 
   .material-symbols-outlined {  

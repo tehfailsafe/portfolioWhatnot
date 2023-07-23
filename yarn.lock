@@ -5387,6 +5387,11 @@ react-markdown@^8.0.3:
     unist-util-visit "^4.0.0"
     vfile "^5.0.0"
 
+react-responsive-masonry@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/react-responsive-masonry/-/react-responsive-masonry-2.1.4.tgz#28d6058167c5b047c9df2ae41216c4fdc6ca976b"
+  integrity sha512-Neqkc6gM7F5d+nBvDSlKQmQOjdWNabLT2EXpVvpJb6oD8lD3hRujd8IDd1UViQR++SSTkhLcsC3Ru7hc6XjT5A==
+
 react-router-dom@^6.2.2:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.3.0.tgz#a0216da813454e521905b5fa55e0e5176123f43d"

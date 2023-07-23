@@ -4,7 +4,6 @@ export const Grid = () => {
       {[...Array(100)].map((e, index) => (
         <div key={`grid_${index}`} className="h-2 border-red-500 border-b opacity-50" />
       ))}
-      =
     </div>
   );
 };
